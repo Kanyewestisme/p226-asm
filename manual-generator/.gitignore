@@ -1,0 +1,17 @@
+# Original inputs, generated files, environments and local credentials stay local.
+/input/
+/output/
+/.venv/
+/.cache/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.stp
+*.step
+*.brep
+*.pdf
+*.png
+*.otf
+*.ttf
+*.zip
