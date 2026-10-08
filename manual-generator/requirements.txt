@@ -1,0 +1,5 @@
+# Verified on Python 3.12. Install into a virtual environment.
+# No external font package is needed for the two-page template workflow.
+cadquery==2.7.0
+cadquery-ocp==7.8.1.1.post1
+PyMuPDF==1.26.6
