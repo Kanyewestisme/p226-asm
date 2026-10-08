@@ -1,0 +1,161 @@
+{
+  "coordinate_system": "PDF display points, origin top-left, x right, y down; page height 841.8900146484375; convert PDF bottom-left rectangle with y0_new = height - y1_old, y1_new = height - y0_old",
+  "source": "input/P226(M)(S) 安装说明书 HBD-RD-P226-006 A0.pdf",
+  "status": "Verified white-overlay regions for the original two-page A3 template. Original illustration vectors remain underneath; this is not destructive redaction. Replacement SVGs include the assembly-direction arrows.",
+  "regions": [
+    {
+      "step": 1,
+      "page": 2,
+      "safe_white_masks_pt": [
+        [
+          597,
+          216.5,
+          742.5,
+          284.5
+        ]
+      ],
+      "original_vector_art_bbox_pt": [
+        599.480712890625,
+        218.7458038330078,
+        740.0580444335938,
+        282.4358215332031
+      ],
+      "paths_verified_covered": 1582,
+      "uncovered_paths": [],
+      "intersected_text_spans": []
+    },
+    {
+      "step": 2,
+      "page": 2,
+      "safe_white_masks_pt": [
+        [
+          827,
+          220,
+          856,
+          235.5
+        ],
+        [
+          787.5,
+          234.5,
+          912.5,
+          299.5
+        ]
+      ],
+      "original_vector_art_bbox_pt": [
+        789.6198120117188,
+        222.471923828125,
+        910.3871459960938,
+        297.5220031738281
+      ],
+      "paths_verified_covered": 1614,
+      "uncovered_paths": [],
+      "intersected_text_spans": []
+    },
+    {
+      "step": 3,
+      "page": 2,
+      "safe_white_masks_pt": [
+        [
+          1013,
+          195.3,
+          1120.5,
+          304.3
+        ]
+      ],
+      "original_vector_art_bbox_pt": [
+        1015.2374877929688,
+        197.48873901367188,
+        1118.318115234375,
+        302.0092468261719
+      ],
+      "paths_verified_covered": 15628,
+      "uncovered_paths": [],
+      "intersected_text_spans": []
+    },
+    {
+      "step": 4,
+      "page": 2,
+      "safe_white_masks_pt": [
+        [
+          610.8,
+          379.1,
+          712,
+          525.8
+        ]
+      ],
+      "original_vector_art_bbox_pt": [
+        612.9992065429688,
+        381.3089294433594,
+        709.68798828125,
+        523.5513916015625
+      ],
+      "paths_verified_covered": 5210,
+      "uncovered_paths": [],
+      "intersected_text_spans": []
+    },
+    {
+      "step": 5,
+      "page": 2,
+      "safe_white_masks_pt": [
+        [
+          808.8,
+          382.2,
+          911,
+          525
+        ]
+      ],
+      "original_vector_art_bbox_pt": [
+        811.0657958984375,
+        384.4854431152344,
+        908.7221069335938,
+        522.7776489257812
+      ],
+      "paths_verified_covered": 5525,
+      "uncovered_paths": [],
+      "intersected_text_spans": []
+    },
+    {
+      "step": 6,
+      "page": 2,
+      "safe_white_masks_pt": [
+        [
+          1022.3,
+          371.4,
+          1107.3,
+          525
+        ]
+      ],
+      "original_vector_art_bbox_pt": [
+        1024.591552734375,
+        373.71881103515625,
+        1104.9100341796875,
+        522.7577514648438
+      ],
+      "paths_verified_covered": 5826,
+      "uncovered_paths": [],
+      "intersected_text_spans": []
+    },
+    {
+      "step": 7,
+      "page": 2,
+      "safe_white_masks_pt": [
+        [
+          614,
+          609.3,
+          718.2,
+          781.6
+        ]
+      ],
+      "original_vector_art_bbox_pt": [
+        616.3077392578125,
+        611.5297241210938,
+        715.9120483398438,
+        779.2777709960938
+      ],
+      "paths_verified_covered": 10490,
+      "uncovered_paths": [],
+      "intersected_text_spans": []
+    }
+  ],
+  "source_sha256": "d1f3c368b8e4fede4a61993db05423704889342aa21fafcab6a9a2f396db2669"
+}
