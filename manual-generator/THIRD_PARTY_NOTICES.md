@@ -1,6 +1,8 @@
 # 第三方依赖说明
 
-本目录不分发第三方库、字体、原始CAD、原PDF或其二进制副本。requirements.txt 引用的依赖由安装者从官方 Python 包源另行安装，其自带许可与版权声明继续适用。这里的说明不替代任何上游许可，也不为 P226 原项目或用户资产新增整体许可。
+本目录包含用于浏览器三维预览的 Three.js 源码，许可见下。requirements.txt 引用的 Python 依赖由安装者从官方 Python 包源另行安装，其自带许可与版权声明继续适用。本目录不包含原始 CAD、原 PDF 或独立字体文件；这里的说明不替代任何上游许可，也不为 P226 原项目或用户资产新增整体许可。
+
+- Three.js 0.180.0：MIT License。本地文件为 `frontend/vendor/three.module.js`、`three.core.js`、`OrbitControls.js` 和 `TrackballControls.js`，来自官方 [three@0.180.0 npm 包](https://registry.npmjs.org/three/-/three-0.180.0.tgz)。两个 Controls 文件仅将 `three` 导入指向同目录 `three.module.js`；许可完整保留于 `frontend/vendor/LICENSE.three.txt`，文件哈希与来源保留于 `frontend/vendor/three.provenance.json`。当前三维交互使用 TrackballControls。
 
 - CadQuery 2.7.0：Apache License 2.0。项目与许可：[CadQuery](https://github.com/CadQuery/cadquery)。
 - cadquery-ocp 7.8.1.1.post1：OCP 的许可为 Apache License 2.0；其 OpenCascade 内核及其它随包组件各自的许可仍适用。[OCP LICENSE](https://github.com/CadQuery/OCP/blob/master/LICENSE)。

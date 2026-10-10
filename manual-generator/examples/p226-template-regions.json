@@ -1,0 +1,255 @@
+{
+  "source_sha256": "bc9fdacd205714dd2589a24a8a0b59b1b5a6972ab9d8e4c80065277962d1c987",
+  "sha256": "d1f3c368b8e4fede4a61993db05423704889342aa21fafcab6a9a2f396db2669",
+  "page_count": 2,
+  "mode": "original_template_figure_replacement",
+  "figure_slots": [
+    {
+      "step_id": "step_01_casters",
+      "page": 2,
+      "rect": [
+        598,
+        212,
+        755,
+        309
+      ],
+      "safe_white_masks_pt": [
+        [
+          597,
+          216.5,
+          742.5,
+          284.5
+        ]
+      ]
+    },
+    {
+      "step_id": "step_02_gas_lift",
+      "page": 2,
+      "rect": [
+        805,
+        219,
+        939,
+        309
+      ],
+      "safe_white_masks_pt": [
+        [
+          827,
+          220,
+          856,
+          235.5
+        ],
+        [
+          787.5,
+          234.5,
+          912.5,
+          299.5
+        ]
+      ]
+    },
+    {
+      "step_id": "step_03_upper",
+      "page": 2,
+      "rect": [
+        1008,
+        195,
+        1150,
+        309
+      ],
+      "safe_white_masks_pt": [
+        [
+          1013,
+          195.3,
+          1120.5,
+          304.3
+        ]
+      ]
+    },
+    {
+      "step_id": "step_04_upper_to_base",
+      "page": 2,
+      "rect": [
+        611,
+        378,
+        721,
+        527
+      ],
+      "safe_white_masks_pt": [
+        [
+          610.8,
+          379.1,
+          712,
+          525.8
+        ]
+      ]
+    },
+    {
+      "step_id": "step_05_armrests",
+      "page": 2,
+      "rect": [
+        804,
+        374,
+        950,
+        527
+      ],
+      "safe_white_masks_pt": [
+        [
+          808.8,
+          382.2,
+          911,
+          525
+        ]
+      ]
+    },
+    {
+      "step_id": "step_06_headrest",
+      "page": 2,
+      "rect": [
+        1010,
+        371,
+        1130,
+        527
+      ],
+      "safe_white_masks_pt": [
+        [
+          1022.3,
+          371.4,
+          1107.3,
+          525
+        ]
+      ]
+    },
+    {
+      "step_id": "step_07_overview",
+      "page": 2,
+      "rect": [
+        608,
+        609,
+        725,
+        785
+      ],
+      "safe_white_masks_pt": [
+        [
+          614,
+          609.3,
+          718.2,
+          781.6
+        ]
+      ]
+    }
+  ],
+  "step_bindings": [
+    {
+      "step_id": "step_01_casters",
+      "title": "安装椅轮",
+      "instruction": "将椅轮逐个插入五爪装配孔内\n（注：椅轮和五爪配合较紧，需要将椅轮垂直对准孔\n位后，可一边旋转的同时用力下压椅轮）",
+      "consumer": {
+        "parts_text": "五爪、椅轮",
+        "source": "用户给定说明书参考",
+        "caution": [
+          "注意：椅轮与五爪配合较紧。垂直对准孔位后，可一边旋转椅轮，一边用力下压。"
+        ],
+        "engineering_notes": [
+          "工程待核：椅轮、五爪的部件对应及插接关系，需与实际供货版本核对。"
+        ],
+        "figure_caption": "椅轮与五爪装配示意 | 真实STP衍生图"
+      }
+    },
+    {
+      "step_id": "step_02_gas_lift",
+      "title": "安装气压杆",
+      "instruction": "将气压杆较粗的一端对准五爪中心孔位后放置进去\n（注：由于新安装气压杆在未受力的情况下和椅脚\n配合较松，倒置会有掉落的风险）",
+      "consumer": {
+        "parts_text": "五爪、气压杆",
+        "source": "用户给定说明书参考",
+        "caution": [
+          "注意：气压杆在未受力时与五爪配合较松，倒置可能掉落。"
+        ],
+        "engineering_notes": [
+          "工程待核：气压杆与五爪的部件对应、插接端及安装方向，需与实物核对。"
+        ],
+        "figure_caption": "气压杆与五爪装配示意 | 真实STP衍生图"
+      }
+    },
+    {
+      "step_id": "step_03_upper",
+      "title": "连接靠背与坐垫",
+      "instruction": "将靠背尾托的孔位对准底盘孔并朝内推入用3颗C螺丝\n进行固定\n（注：螺丝放入后不可直接拧紧，需将螺丝全部定位\n后再逐一拧紧）",
+      "consumer": {
+        "parts_text": "靠背、坐垫；C螺丝 ×3",
+        "source": "用户给定说明书参考",
+        "caution": [
+          "注意：先将3颗螺丝全部定位，再逐一拧紧。",
+          "不要只装入一颗就直接拧紧。"
+        ],
+        "engineering_notes": [
+          "工程待核：C螺丝3处孔位及CAD对应未确认，CAD主图未绘螺丝。原STP缺少完整网布及PDF所示脚托几何。"
+        ],
+        "figure_caption": "靠背与坐垫连接示意 | 真实STP衍生图"
+      }
+    },
+    {
+      "step_id": "step_04_upper_to_base",
+      "title": "连接椅身与五爪",
+      "instruction": "将座垫对准气压杆插入到底盘孔内，可拿起五爪去辅助对准\n（注：不可以直接手握气压杆对孔，可能会使气压杆和五爪\n分离，由于椅子较重，此步骤建议两个人配合操作）",
+      "consumer": {
+        "parts_text": "坐垫、靠背、五爪、气压杆、椅轮",
+        "source": "用户给定说明书参考",
+        "caution": [
+          "注意：建议两人配合。不要直接握住气压杆对孔，",
+          "以免气压杆与五爪分离。"
+        ],
+        "engineering_notes": [
+          "工程待核：配合界面、插接深度及安装方向需与实物核对。原STP缺少完整网布及PDF所示脚托几何。"
+        ],
+        "figure_caption": "椅身与下部总成连接示意 | 真实STP衍生图"
+      }
+    },
+    {
+      "step_id": "step_05_armrests",
+      "title": "安装左右扶手",
+      "instruction": "区分左右扶手,扶手柄向坐垫前侧倾斜,扶手安装孔\n对准靠背两侧安装孔,用2颗B螺丝从靠背内侧分别\n将左右扶手固定在靠背上\nζ",
+      "consumer": {
+        "parts_text": "靠背、扶手；B螺丝 ×2",
+        "source": "用户给定说明书参考",
+        "caution": [
+          "方向要点：扶手柄朝坐垫前侧倾斜；",
+          "每侧1颗B螺丝，均从靠背内侧固定。"
+        ],
+        "engineering_notes": [
+          "工程待核：B螺丝未可靠对应，CAD图未绘B螺丝；箭头只示扶手就位。左右及孔位须与实物核对；原STP网布不完整。"
+        ],
+        "figure_caption": "左右扶手总成就位示意 | 真实STP衍生图"
+      }
+    },
+    {
+      "step_id": "step_06_headrest",
+      "title": "安装头枕",
+      "instruction": "将头枕插入固定在靠背顶部的滑块中\n（注：如需取下头枕，需要先将头枕置于最低处，\n再用力拔出）",
+      "consumer": {
+        "parts_text": "头枕、靠背",
+        "source": "用户给定说明书参考",
+        "caution": [
+          "注意：如需取下头枕，先将头枕调至最低处，再用力拔出。"
+        ],
+        "engineering_notes": [
+          "工程待核：头枕与顶部滑块的配合及插入、拆卸行程需与实物核对。原STP缺少完整网布。"
+        ],
+        "figure_caption": "头枕装配示意 | 真实STP衍生图"
+      }
+    },
+    {
+      "step_id": "step_07_overview",
+      "title": "安装完成",
+      "instruction": "安装完成",
+      "consumer": {
+        "parts_text": "完整总成",
+        "source": "用户给定说明书参考",
+        "caution": [],
+        "engineering_notes": [
+          "版本待核：STP与HBYP226 M/S供货版本尚未确认。模型缺少完整网布及PDF所示脚托几何；脚托仅部分版本具备。"
+        ],
+        "figure_caption": "总装外观示意 | 真实STP衍生图"
+      }
+    }
+  ]
+}

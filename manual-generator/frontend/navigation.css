@@ -1,0 +1,5 @@
+.view-navigation{display:flex;align-items:center;flex-wrap:wrap;gap:5px;padding:9px 12px;border-top:1px solid var(--border);background:#fafcfc}
+.axis-view-buttons{display:flex;gap:3px;margin-right:auto}.axis-view-buttons button{padding:4px 5px;min-width:27px;min-height:24px;font:600 10px/1.4 Consolas,monospace}
+.axis-view-buttons [data-view-axis=x]{color:#b86464;border-color:#e9d4d4}.axis-view-buttons [data-view-axis=y]{color:#4b8f6c;border-color:#cbdfd1}.axis-view-buttons [data-view-axis=z]{color:#5d82b3;border-color:#d1ddeb}
+.view-navigation>button{padding:4px 6px;font-size:10px;min-height:25px}.view-navigation .compact-check{font-size:10px}.navigation-hint{padding:0 12px 10px;font-size:10px;line-height:1.6;color:var(--muted)}.viewer-axis-widget button:focus-visible{outline:2px solid #70a7aa;outline-offset:2px}
+@media(max-width:1000px){.view-navigation{padding:8px 10px;gap:4px}.axis-view-buttons button{min-width:25px;padding:4px}.navigation-hint{padding-inline:10px}}@media(max-width:620px){.view-navigation{gap:6px}.axis-view-buttons button{min-width:30px;padding:5px}.view-navigation>button{font-size:11px}}

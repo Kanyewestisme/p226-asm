@@ -3,6 +3,8 @@
 /output/
 /.venv/
 /.cache/
+/app-data/
+/projects/
 __pycache__/
 *.py[cod]
 .env

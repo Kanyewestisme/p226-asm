@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+manual-generator/input/
+manual-generator/output/
+manual-generator/projects/

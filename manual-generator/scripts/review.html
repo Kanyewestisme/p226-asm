@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>安装说明草案</title>
+<style>
+:root{font:15px/1.55 "Segoe UI","Microsoft YaHei",sans-serif;color:#202a32;background:#f1f3f5}*{box-sizing:border-box}body{margin:0}header{background:#192b3a;color:white;padding:28px max(24px,calc((100vw - 1280px)/2));}h1{font-size:26px;line-height:1.25;margin:4px 0 12px}p{margin:5px 0}main{max-width:1280px;margin:22px auto;padding:0 22px}.muted{color:#697783;font-size:13px}header .muted{color:#bfcbd4}.toolbar{position:sticky;top:0;z-index:2;display:flex;gap:9px;align-items:center;flex-wrap:wrap;padding:12px 0;background:#f1f3f5}button,a.button{border:1px solid #c1cbd3;border-radius:6px;padding:8px 13px;color:#263a4a;background:#fff;cursor:pointer;font:inherit;text-decoration:none}button.primary{background:#245d81;color:white;border-color:#245d81}button:disabled{opacity:.5;cursor:default}#message{padding:10px 14px;background:white;border-left:3px solid #8fa6b6;white-space:pre-wrap;display:none}.intro{background:#fff9ed;border:1px solid #ead6b7;border-radius:8px;padding:16px 20px;margin:12px 0 22px}.step{background:white;border-radius:10px;border:1px solid #dce2e7;margin:18px 0;overflow:hidden}.stephead{padding:16px 22px;border-bottom:1px solid #e9edf0;display:flex;gap:12px;align-items:center}.number{font-size:26px;font-weight:700;color:#285977}.stephead input{font-size:19px;font-weight:600;flex:1;min-width:100px;border:none;background:transparent;color:inherit}.content{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(300px,1fr)}.illustration{padding:18px;display:flex;align-items:center;justify-content:center;min-height:300px}.illustration img{width:100%;max-height:510px;object-fit:contain}.details{padding:22px;border-left:1px solid #e9edf0}textarea,input,select{font:inherit;color:inherit;padding:8px;border:1px solid #c9d2da;border-radius:5px;background:white}textarea{width:100%;resize:vertical;min-height:100px}.field{display:block;margin:0 0 15px}.field>span{display:block;margin-bottom:5px;color:#596974;font-size:13px}ul{padding-left:20px}.warnings{font-size:13px;color:#945423}.controls{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.reviewed{display:block;font-weight:600;color:#245d81}.reviewed input{margin-right:8px}details{margin:14px 0;background:#fff;border:1px solid #dce2e7;padding:14px;border-radius:8px}summary{cursor:pointer;font-weight:600}.advanced{min-height:300px;font:12px/1.6 Consolas,monospace}.tag{border-radius:4px;background:#fff0d6;color:#8a5720;padding:4px 8px;font-size:12px;white-space:nowrap}footer{padding:25px 0;color:#697783;font-size:12px}code{font:12px Consolas,monospace;word-break:break-all}.offline-only{display:none}body.offline .offline-only{display:block}body.offline .edit-only{display:none}@media(max-width:800px){.content{grid-template-columns:1fr}.details{border-left:none;border-top:1px solid #e9edf0}header{padding:24px}.stephead{padding:12px}.stephead input{font-size:16px}}
+</style></head><body><header><p class="muted">STP 安装说明生成器 · 升级流程</p><h1 id="title"></h1><p id="status"></p><p class="muted" id="source"></p></header><main>
+<div class="toolbar"><button id="save" class="edit-only">保存修改</button><button id="render" class="primary edit-only">生成步骤图</button><button id="export" class="edit-only">用已有图套入原模板</button><button id="confirm" class="edit-only">确认这套说明</button><a id="pdf-link" class="button" href="manual.pdf" target="_blank">查看原模板 PDF</a><button id="download">下载步骤配置</button><span class="muted" id="progress"></span></div><div id="message" role="status"></div>
+<div class="intro"><p id="draft-info">这是基于当前 STP 的安装步骤建议。请核对分组、顺序、图示和文字后确认。</p><p class="muted">红色箭头表示分离零件向 STP 中位置复位的示意。候选接近位置不代表已确认的螺孔、配合类型或安装方向。</p><p class="offline-only muted">当前为离线预览。运行 <code>python scripts/manual.py review --project 项目目录</code> 可编辑并重新出图。</p></div>
+<details><summary>本次模型与分析边界</summary><p id="analysis-summary"></p><ul id="analysis-warnings" class="muted"></ul></details><div id="steps"></div><details><summary>总成与连接候选</summary><div class="edit-only"><p class="muted">勾选准备合并展示的组，命名后重新起草步骤。当前文字与图示会保留在历史文件中。</p><div class="controls"><input id="merge-label" placeholder="合并后的总成名称" aria-label="合并后的总成名称"><button id="merge">合并选中组并重新起草</button></div></div><div id="connections"></div></details><details class="edit-only"><summary>详细配置：分组、增删步骤、箭头和局部放大</summary><p class="muted">所有几何引用都使用当前源文件中的实例 ID。详细配置修改后，点击“应用详细配置”，再重新出图。</p><textarea id="json" class="advanced" spellcheck="false"></textarea><button id="apply">应用详细配置</button></details><footer id="footer"></footer>
+</main><script>
+'use strict';
+let state=/*__STATE__*/;
+const $=id=>document.getElementById(id), esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const cameraPresets=[['当前配置',null],['正面斜视',[1,.7,1]],['背面斜视',[-1,.7,-1]],['另一侧斜视',[-1,.7,1]],['俯视',[.15,1,.15]],['仰视',[1,-.8,1]]];
+let busy=false,dirty=false;
+function notify(message){$('message').style.display='block';$('message').textContent=message;}
+
+function visibilityPanel(s,i,p){
+ const catalog=new Map((state.part_catalog||[]).map(row=>[row.id,row])),hidden=new Set(s.hidden_part_ids||[]),excluded=new Set(p.excluded_part_ids||[]);
+ const groups=p.groups.filter(g=>[...s.assembled_groups,...s.moving_groups].includes(g.id));
+ const final=i===p.steps.length-1;
+ const items=groups.flatMap(g=>g.part_ids.filter(id=>!excluded.has(id)).map(id=>{const r=catalog.get(id),label=r?`${r.name} [源实例 ${r.index}]`:`源实例 ${id.split('/').pop()}`;return `<label style="display:block;margin:5px 0"><input type="checkbox" data-hide-part="${esc(id)}" ${hidden.has(id)?'checked':''} ${final?'disabled':''}> ${esc(g.label)} / ${esc(label)}${r?.solids>1?'（多实体叶节点，整项隐藏）':''}</label>`;}));
+ return `<details class="edit-only"><summary>本步临时隐藏 · ${hidden.size} 个源实例</summary><p class="muted">选中整项源实例隐藏，以看清连接。原 STP 保留；同一实例内不可分的网布与框架不能分别控制。</p>${final?'<p class="muted">最终总览恢复临时隐藏的零件。</p>':items.join('')}<label class="field"><span>隐藏原因</span><input style="width:100%" data-field="visibility_reason" value="${esc(s.visibility_reason||'')}" ${final?'readonly':''}></label></details>`;
+}
+
+function refresh(){
+ const p=state.plan,m=state.manifest,fixed=Boolean(p.pdf_template);
+ document.body.classList.toggle('offline',!state.editable);document.title=p.product.title;$('title').textContent=p.product.title;
+ $('status').textContent=p.status==='confirmed'?'包装已确认':p.configuration_origin?.kind==='explicit_exact_source_profile'?'沿用原项目配置 · 待包装确认':'自动建议 · 待包装确认';$('source').textContent='STP 指纹 '+p.source.sha256.slice(0,16);
+ $('draft-info').textContent=p.configuration_origin?.kind==='explicit_exact_source_profile'?'本样例沿用原项目的分组和图示参数，用于验证通用引擎。初次自动建议保存在 proposed_steps.json。':'这是基于当前 STP 的安装步骤建议。请核对分组、顺序、图示和文字后确认。';
+ if(fixed)$('draft-info').textContent='已绑定你提供的原模板：保留两页、封面、文字、二维码、配件栏和功能图，只替换对应步骤图。可调整图示角度、分离距离与本步显隐。';
+ $('render').textContent=fixed?'更新步骤图并套入原模板':'生成步骤图';
+ const entries=Object.fromEntries((m?.entries||[]).map(e=>[e.step_id||e.id,e]));
+ $('steps').innerHTML=p.steps.map((s,i)=>{
+  const e=entries[s.id],src=e?'diagrams/'+e.svg_path+'?v='+e.svg_sha256.slice(0,12):'';
+  return `<section class="step" data-index="${i}"><div class="stephead"><span class="number">${String(i+1).padStart(2,'0')}</span><input data-field="title" value="${esc(s.title)}" ${state.editable?'':'readonly'} aria-label="步骤标题"><span class="tag">${s.reviewed?'已核对':'待核对'}</span></div><div class="content"><div class="illustration">${src?`<img src="${esc(src)}" alt="${esc(s.title)}">`:'<p class="muted">需要生成当前配置的插图</p>'}</div><div class="details"><label class="field"><span>步骤说明</span><textarea data-field="instruction" ${state.editable?'':'readonly'}>${esc(s.instruction)}</textarea></label><div class="edit-only"><label class="field"><span>查看角度（仅调整图示）</span><select data-field="camera">${cameraPresets.map(([name],j)=>`<option value="${j}">${name}</option>`).join('')}</select></label><div class="controls"><button data-action="closer">分离更近</button><button data-action="farther">分离更远</button><button data-action="up" ${i===0||!s.moving_groups.length?'disabled':''}>提前一步</button><button data-action="down" ${i>=p.steps.length-2||!s.moving_groups.length?'disabled':''}>延后一步</button></div></div>${e?.focus?`<details><summary>模型局部视图</summary><img style="width:100%" src="diagrams/${esc(e.focus.svg_path)}?v=${e.focus.svg_sha256.slice(0,12)}" alt="当前模型中的局部实例"></details>`:''}<p class="muted">参与总成：${esc([...s.assembled_groups,...s.moving_groups].map(id=>p.groups.find(g=>g.id===id)?.label||id).join('、'))}</p><ul class="warnings">${[...(s.warnings||[]),...(e?.skipped_arrows?.length?['有复位箭头投影过短而未显示，请换角度或调整点位。']:[])].map(w=>`<li>${esc(w)}</li>`).join('')}</ul><details><summary>建议依据</summary><ul class="muted">${(s.evidence||[]).map(w=>`<li>${esc(typeof w==='string'?w:(w.kind==='cad_occurrence_group'?'分组来自 STP 的装配层级，实际包装总成边界需要核对。':w.kind==='packaging_selected_group'?'包装选中了当前 STP 实例，合并边界需要核对。':w.kind==='existing_source_profile'?'沿用精确匹配当前 STP 摘要的既有人工配置；自动建议另行保留。':w.kind==='candidate_contact'?'检测到相关实例的表面接近候选；调序后须重新核对该候选与当前步骤的关系。':'来自当前 STP 的几何分析建议。'))}</li>`).join('')}</ul></details>${visibilityPanel(s,i,p)}<label class="reviewed edit-only"><input type="checkbox" data-field="reviewed" ${s.reviewed?'checked':''}>我已核对这一步的图示和文字</label></div></div></section>`;
+ }).join('');
+ $('json').value=JSON.stringify(p,null,2);$('json').disabled=busy;
+ const a=p.analysis_summary; $('analysis-summary').textContent=a?`检测了 ${a.tested_pairs}/${a.candidate_pairs} 组几何邻近候选；${a.untested_pairs} 组未测试；${a.non_solid_instances} 个非实体叶实例需要核对是否为辅助曲面。`:'检测结果为有界的几何建议，请核对总成、顺序与候选连接。';
+ const omissions=p.excluded_part_ids?.length?['当前配置明确隐藏 '+p.excluded_part_ids.length+' 个源实例：'+p.exclusion_reason]:[]; $('analysis-warnings').innerHTML=[...omissions,...(p.warnings||[])].map(w=>`<li>${esc(w)}</li>`).join('');
+ $('connections').innerHTML='<p>'+p.groups.map(g=>`<label><input class="edit-only" type="checkbox" data-group="${esc(g.id)}"> ${esc(g.label)} · ${g.part_ids.length} 个 CAD 叶实例</label>`).join('<br>')+'</p>'+(p.connection_candidates||[]).map(c=>`<p class="muted">${esc((c.group_ids||[]).map(id=>p.groups.find(g=>g.id===id)?.label||id).join(' ↔ '))} · 最小表面间隙 ${esc(Number(c.distance_mm).toFixed(3))} mm · ${esc(c.status||'unverified')}</p>`).join('');
+ const proposals=state.assembly_suggestions||[],proposalPanel=document.createElement('div');proposalPanel.id='assembly-suggestions';
+ proposalPanel.innerHTML=proposals.length?'<h3>可选总成与批次建议</h3><p class="muted">实测近邻和重复几何提供候选，尚未自动合并，也不代表已确认的包装总成。</p>'+proposals.map((q,i)=>`<p>${esc(q.group_ids.map(id=>p.groups.find(g=>g.id===id)?.label||id).join('、'))}<br><span class="muted">${esc(q.basis)}</span><br><button class="edit-only" data-select-proposal="${i}" ${fixed?'disabled':''}>勾选这些组一起展示</button></p>`).join('')+(fixed?'<p class="muted">当前原模板的步骤已固定，这些候选只供参考；调整步骤含义需重新校准模板。</p>':''):'';$('connections').appendChild(proposalPanel);
+ $('footer').textContent='几何只来自本次 STP。全部 '+p.groups.reduce((sum,g)=>sum+g.part_ids.length,0)+' 个 CAD 叶实例保持独立；同名不合并。起始组、先后顺序和候选连接仍需按实际包装安装核对。';
+ $('progress').textContent=dirty?'有未保存修改':`${p.steps.filter(s=>s.reviewed).length}/${p.steps.length} 步已核对`;
+ for(const control of document.querySelectorAll('button,input,textarea,select')){if(busy)control.disabled=true;}
+ if(!busy)for(const button of document.querySelectorAll('.toolbar button'))button.disabled=false;
+ $('apply').disabled=busy;$('merge').disabled=busy||fixed;$('merge-label').disabled=busy||fixed;
+ if(fixed){
+  for(const input of document.querySelectorAll('[data-field="title"],[data-field="instruction"]'))input.readOnly=true;
+  for(const button of document.querySelectorAll('[data-action="up"],[data-action="down"],[data-group]'))button.disabled=true;
+ }
+ $('export').disabled=busy||dirty||!state.manifest||!fixed;
+ const pdfReady=state.manifest&&state.pdf_ready&&!dirty&&!busy;
+ $('pdf-link').style.opacity=pdfReady?'1':'.45';$('pdf-link').setAttribute('aria-disabled',String(!pdfReady));
+}
+function modified(geometry=true){dirty=true;state.plan.status='draft';delete state.plan.confirmation;if(geometry){for(const s of state.plan.steps)s.reviewed=false;state.manifest=null;state.pdf_ready=false;}refresh();}
+$('steps').addEventListener('change',event=>{
+ if(!state.editable||busy)return;
+ const section=event.target.closest('.step');if(!section)return;
+ const index=Number(section.dataset.index),s=state.plan.steps[index],pid=event.target.dataset.hidePart;
+ if(pid!==undefined){
+  if(index===state.plan.steps.length-1)return;
+  const hidden=new Set(s.hidden_part_ids||[]);if(event.target.checked)hidden.add(pid);else hidden.delete(pid);
+  const excluded=new Set(state.plan.excluded_part_ids||[]),groups=state.plan.groups.filter(g=>[...s.assembled_groups,...s.moving_groups].includes(g.id));
+  const retained=g=>g.part_ids.some(id=>!excluded.has(id)&&!hidden.has(id));
+  if(!groups.some(retained)||groups.some(g=>s.moving_groups.includes(g.id)&&!retained(g))){notify('当前图示和移动总成都需要保留几何，请调整选择。');refresh();return;}
+  s.hidden_part_ids=[...hidden];s.focus_part_ids=s.focus_part_ids.filter(id=>!hidden.has(id));
+  s.visibility_reason=hidden.size?(s.visibility_reason||'为显示本步骤连接位置临时隐藏。'):'';
+  modified();return;
+ }
+ const field=event.target.dataset.field;if(!field)return;
+ if(state.plan.pdf_template&&['title','instruction'].includes(field))return;
+ if(field==='reviewed'){s.reviewed=event.target.checked;modified(false);return;}
+ if(field==='camera'){const preset=cameraPresets[Number(event.target.value)][1];if(preset){s.camera=[...preset];s.up=[0,1,0];}}
+ else s[field]=event.target.value;
+ modified();
+});
+function recalculate(){if(state.plan.sequence_mode==='configured')return;const done=[];for(const s of state.plan.steps){s.assembled_groups=[...done];for(const g of s.moving_groups)if(!done.includes(g))done.push(g);}}
+$('connections').addEventListener('click',event=>{const raw=event.target.dataset.selectProposal;if(raw===undefined||busy||!state.editable||state.plan.pdf_template)return;const proposal=(state.assembly_suggestions||[])[Number(raw)];if(!proposal)return;const ids=new Set(proposal.group_ids);for(const input of document.querySelectorAll('[data-group]'))input.checked=ids.has(input.dataset.group);$('merge-label').value=state.plan.groups.filter(g=>ids.has(g.id)).map(g=>g.label).join('、');notify('已勾选候选组。核对总成边界、填写名称后，可点击“合并选中组并重新起草”。');});
+$('steps').addEventListener('click',event=>{
+ const action=event.target.dataset.action;if(!action||!state.editable||busy)return;
+ const index=Number(event.target.closest('.step').dataset.index),s=state.plan.steps[index];
+ if(action==='closer'||action==='farther'){const factor=action==='closer'?.8:1.25;for(const [id,v] of Object.entries(s.offsets))s.offsets[id]=v.map(x=>x*factor);for(const a of s.arrows||[])a.from=a.from.map((x,j)=>a.to[j]+(x-a.to[j])*factor);}
+ else {if(state.plan.pdf_template)return;const target=index+(action==='up'?-1:1);if(!s.moving_groups.length||target<0||target>=state.plan.steps.length-1)return;[state.plan.steps[index],state.plan.steps[target]]=[state.plan.steps[target],state.plan.steps[index]];recalculate();}
+ modified();
+});
+async function api(path,body){const response=await fetch('/api/'+path,{method:'POST',headers:{'Content-Type':'application/json','X-Review-Token':state.token||''},body:JSON.stringify(body)});const result=await response.json();if(!response.ok){const raw=result.error||response.statusText;const messages={'Review each step in the preview before confirming.':'请先核对并勾选每一步，再确认这套说明。','No current diagrams. Render the draft first.':'当前插图尚未生成，请更新步骤图。'};throw Error(raw.startsWith('Fixed PDF template')?'原模板文字、步骤顺序和对应槽位固定；这里只能调整图示。':messages[raw]||raw);}if(result.assembly_suggestions)state.assembly_suggestions=result.assembly_suggestions;return result;}
+async function action(fn){if(busy)return;busy=true;refresh();try{await fn();}catch(error){notify(error.message);}finally{busy=false;refresh();}}
+async function save(){const result=await api('save',{plan:state.plan});state.plan=result.plan;state.manifest=result.manifest;state.pdf_ready=result.pdf_ready;dirty=false;}
+$('save').onclick=()=>action(async()=>{await save();notify(state.manifest?'已保存核对状态。':'已保存修改，请重新生成插图。');});
+$('render').onclick=()=>action(async()=>{await save();notify('正在按当前配置生成步骤图，复杂总成可能需要几分钟。');const result=await api('render',{});state.plan=result.plan;state.manifest=result.manifest;state.pdf_ready=result.pdf_ready;notify(result.pdf_ready?'步骤图已更新，并已套入原模板。请核对后确认。':'步骤图已生成；最终 PDF 等待绑定你提供的模板。');});
+$('export').onclick=()=>action(async()=>{if(dirty||!state.plan.pdf_template)return;notify('正在把已有步骤图套入原模板。');const result=await api('export',{});state.plan=result.plan;state.manifest=result.manifest;state.pdf_ready=result.pdf_ready;notify('已按原模板导出 PDF，步骤图未重新计算。');});
+$('confirm').onclick=()=>action(async()=>{await save();const result=await api('confirm',{});state.plan=result.plan;state.manifest=result.manifest;state.pdf_ready=result.pdf_ready;notify('已记录包装确认，可使用当前 SVG、说明文字和原模板 PDF。');});
+$('merge').onclick=()=>{if(busy)return;const ids=[...document.querySelectorAll('[data-group]:checked')].map(e=>e.dataset.group),label=$('merge-label').value.trim();if(ids.length<2||!label){notify('请选择至少两个组，并填写合并后的总成名称。');return;}action(async()=>{await save();const result=await api('merge',{group_ids:ids,label});state.plan=result.plan;state.manifest=result.manifest;dirty=false;notify('已按合并后的总成重新提出步骤。请核对顺序、文字并重新出图。');});};
+$('apply').onclick=()=>{if(busy)return;const previous=state.plan,previousManifest=state.manifest,previousDirty=dirty,previousPdf=state.pdf_ready;try{const candidate=JSON.parse($('json').value);if(candidate.source.sha256!==state.plan.source.sha256)throw Error('当前 STP 指纹不能修改。');if(previous.pdf_template){const fixedFields=p=>({pdf_template:p.pdf_template,manual_document:p.manual_document,steps:p.steps.map(s=>({id:s.id,title:s.title,instruction:s.instruction,consumer:s.consumer}))});if(JSON.stringify(fixedFields(previous))!==JSON.stringify(fixedFields(candidate)))throw Error('原模板文字、顺序和槽位固定；详细配置只能修改图示参数及核对信息。');}state.plan=candidate;modified();notify('详细配置已应用到编辑界面，请保存并更新步骤图。');}catch(error){state.plan=previous;state.manifest=previousManifest;dirty=previousDirty;state.pdf_ready=previousPdf;refresh();notify(error.message);}};
+$('pdf-link').onclick=event=>{if(!state.manifest||!state.pdf_ready||dirty||busy){event.preventDefault();notify(state.plan.pdf_template?'请先点击“用已有图套入原模板”，生成当前模板 PDF。':'最终 PDF 只能使用你提供的模板，请先绑定模板。');}};
+$('download').onclick=()=>{const blob=new Blob([JSON.stringify(state.plan,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='steps.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};
+refresh();
+</script></body></html>

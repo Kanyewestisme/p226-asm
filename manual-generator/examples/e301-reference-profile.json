@@ -1,0 +1,1454 @@
+{
+  "schema_version": 1,
+  "source_sha256": "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31",
+  "title": "E301-4P 安装说明草案",
+  "reference": {
+    "sha256": "e644f453585fedaa256c5eec8667c50726384c5968101844dca358213b3e54bc",
+    "filename": "05-E301(EG)(EG-01)(EG-02)(PG)(PG-01)(PG-02)(BHD)通用安装说明书-002-A1（铜版纸300g）.pdf",
+    "page_count": 2,
+    "operation_page": 2,
+    "status": "user_local_reference"
+  },
+  "origin": "用户本地 E301 通用安装说明书与此次最新 STP 的显式候选对应；实例身份和预装状态待复核。",
+  "groups": [
+    {
+      "id": "unit-seat",
+      "label": "坐垫与底盘预装单元",
+      "part_ids": [
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0001/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0001/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0001/component:0004",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0001/component:0005",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0001/component:0006",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0001/component:0007",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0001/component:0008",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0001/component:0009",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0002/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0002/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0003/component:0002/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0003/component:0001/component:0002/component:0004",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0004/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0004/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0004/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0005/component:0001/component:0001/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0005/component:0001/component:0001/component:0001/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0005/component:0001/component:0001/component:0001/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0005/component:0001/component:0001/component:0001/component:0004",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0005/component:0001/component:0001/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0006/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0006/component:0001/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0006/component:0001/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0006/component:0001/component:0004",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0006/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0006/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0006/component:0004/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0006/component:0004/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0001/component:0006/component:0004/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0004",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0005",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0006",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0007",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0008",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0009",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0010",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0011",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0012",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0013",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0014",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0015",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0016",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0017",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0018",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0019",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0020",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0021",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0022",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0023",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0024",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0025",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0026",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0027",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0028",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0029",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0030",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0031",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0032",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0033",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0034",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0035",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0036",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0005/component:0001/component:0037"
+      ],
+      "status": "proposed",
+      "role": "installation",
+      "role_reason": "座垫及底盘机构作为参考中的坐垫交付单元候选；内部机构不另起安装动作。",
+      "basis": "参考部件清单结合当前 STEP 数字 occurrence 分支与源几何形状/位置的显式候选对应；未按同名自动匹配。",
+      "mapping_status": "proposed"
+    },
+    {
+      "id": "unit-back",
+      "label": "靠背与腰部预装单元",
+      "part_ids": [
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0002/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0002/component:0004",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0002/component:0005/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0004",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0005",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0006",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0007",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0008",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0009",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0010",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0011",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0012",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0013",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0014",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0015",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0016/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0001/component:0016/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0002/component:0001/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0004",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0004/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0004/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0005/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0005/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0006/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0006/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0007/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0007/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0008",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0010/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0010/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0011/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0011/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0012/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0012/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0013/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0013/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0005/component:0014/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0006/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0006/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0007",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0003/component:0008"
+      ],
+      "status": "proposed",
+      "role": "installation",
+      "role_reason": "靠背及腰部机构作为参考中的靠背交付单元候选；腰部机构不另起猜测安装动作。",
+      "basis": "参考部件清单结合当前 STEP 数字 occurrence 分支与源几何形状/位置的显式候选对应；未按同名自动匹配。",
+      "mapping_status": "proposed"
+    },
+    {
+      "id": "unit-headrest",
+      "label": "头枕预装单元",
+      "part_ids": [
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0001/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0002/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0002/component:0002/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0002/component:0002/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0002/component:0003/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0002/component:0003/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0004",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0005",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0006/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0006/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0007",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0008",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0009",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0010",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0011",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0012",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0013/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0013/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0013/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0013/component:0004",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0014/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0014/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0015",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0016",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0017/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0017/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0018/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0018/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0019",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0020",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0021",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0022/component:0001/component:0001/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0023",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0024",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0004/component:0025/component:0001/component:0001"
+      ],
+      "status": "proposed",
+      "role": "installation",
+      "role_reason": "保留当前4D头枕全部37个实例；通用参考的旋转卡合适用性待确认。",
+      "basis": "参考部件清单结合当前 STEP 数字 occurrence 分支与源几何形状/位置的显式候选对应；未按同名自动匹配。",
+      "mapping_status": "proposed"
+    },
+    {
+      "id": "unit-gas-lift",
+      "label": "气压杆",
+      "part_ids": [
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0006/component:0001"
+      ],
+      "status": "proposed",
+      "role": "installation",
+      "role_reason": "源圆柱几何与底部中心位置对应参考候选；不猜测未显示的内部结构。",
+      "basis": "参考部件清单结合当前 STEP 数字 occurrence 分支与源几何形状/位置的显式候选对应；未按同名自动匹配。",
+      "mapping_status": "proposed"
+    },
+    {
+      "id": "unit-base",
+      "label": "五爪",
+      "part_ids": [
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0006/component:0002/component:0006"
+      ],
+      "status": "proposed",
+      "role": "preassembled",
+      "role_reason": "源星形单体候选，先作为安装场景的固定基件。",
+      "basis": "参考部件清单结合当前 STEP 数字 occurrence 分支与源几何形状/位置的显式候选对应；未按同名自动匹配。",
+      "mapping_status": "proposed"
+    },
+    {
+      "id": "unit-casters",
+      "label": "椅轮 × 5",
+      "part_ids": [
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0006/component:0002/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0006/component:0002/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0006/component:0002/component:0003",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0006/component:0002/component:0004",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0006/component:0002/component:0005"
+      ],
+      "status": "proposed",
+      "role": "installation",
+      "role_reason": "5个同形源实例及五爪外周位置与参考数量一致，身份对应仍待确认。",
+      "basis": "参考部件清单结合当前 STEP 数字 occurrence 分支与源几何形状/位置的显式候选对应；未按同名自动匹配。",
+      "mapping_status": "proposed"
+    },
+    {
+      "id": "unit-support-left",
+      "label": "扶手支架（左候选）",
+      "part_ids": [
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0007/component:0001/component:0001"
+      ],
+      "status": "proposed",
+      "role": "installation",
+      "role_reason": "扶手分支下单独的大实心支架候选；左右身份以源实例几何复核。",
+      "basis": "参考部件清单结合当前 STEP 数字 occurrence 分支与源几何形状/位置的显式候选对应；未按同名自动匹配。",
+      "mapping_status": "proposed"
+    },
+    {
+      "id": "unit-support-right",
+      "label": "扶手支架（右候选）",
+      "part_ids": [
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0008/component:0001/component:0001"
+      ],
+      "status": "proposed",
+      "role": "installation",
+      "role_reason": "另一侧扶手分支下单独的大实心支架候选；左右身份以源实例几何复核。",
+      "basis": "参考部件清单结合当前 STEP 数字 occurrence 分支与源几何形状/位置的显式候选对应；未按同名自动匹配。",
+      "mapping_status": "proposed"
+    },
+    {
+      "id": "unit-arm-left",
+      "label": "扶手（左候选）",
+      "part_ids": [
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0007/component:0001/component:0002/component:0002/component:0002/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0007/component:0001/component:0002/component:0002/component:0003/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0007/component:0001/component:0002/component:0002/component:0004/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0007/component:0001/component:0002/component:0002/component:0005/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0007/component:0001/component:0002/component:0002/component:0006/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0007/component:0001/component:0002/component:0002/component:0007/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0007/component:0001/component:0002/component:0004"
+      ],
+      "status": "proposed",
+      "role": "installation",
+      "role_reason": "保留该侧7个源实例，不把内部升降旋转机构拆成用户安装动作。",
+      "basis": "参考部件清单结合当前 STEP 数字 occurrence 分支与源几何形状/位置的显式候选对应；未按同名自动匹配。",
+      "mapping_status": "proposed"
+    },
+    {
+      "id": "unit-arm-right",
+      "label": "扶手（右候选）",
+      "part_ids": [
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0008/component:0001/component:0002/component:0002/component:0002",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0008/component:0001/component:0002/component:0002/component:0003/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0008/component:0001/component:0002/component:0002/component:0004/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0008/component:0001/component:0002/component:0002/component:0005/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0008/component:0001/component:0002/component:0002/component:0006/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0008/component:0001/component:0002/component:0002/component:0007/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0008/component:0001/component:0002/component:0002/component:0008/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0008/component:0001/component:0002/component:0003/component:0001",
+        "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31:root:0001/component:0001/component:0008/component:0001/component:0002/component:0004"
+      ],
+      "status": "proposed",
+      "role": "installation",
+      "role_reason": "保留该侧9个源实例，曲面几何同样保留。",
+      "basis": "参考部件清单结合当前 STEP 数字 occurrence 分支与源几何形状/位置的显式候选对应；未按同名自动匹配。",
+      "mapping_status": "proposed"
+    }
+  ],
+  "steps": [
+    {
+      "id": "install-casters",
+      "title": "安装椅轮",
+      "instruction": "将椅轮逐个插入五爪装配孔内（注：椅轮和五爪配合较紧，需要将椅轮垂直对准孔位后，可一边旋转的同时用力下压椅轮）。",
+      "assembled_groups": [
+        "unit-base"
+      ],
+      "moving_groups": [
+        "unit-casters"
+      ],
+      "offsets": {
+        "unit-casters": [
+          0,
+          0,
+          -110
+        ]
+      },
+      "camera": [
+        1,
+        -1,
+        0.85
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "arrows": [
+        {
+          "from": [
+            573.7830408176225,
+            151.9817551236866,
+            -347.698138092506
+          ],
+          "to": [
+            573.7830408176225,
+            151.9817551236866,
+            -237.69813809250599
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            326.2943426835036,
+            -174.18320509962922,
+            -347.6981380925113
+          ],
+          "to": [
+            326.2943426835036,
+            -174.18320509962922,
+            -237.69813809251127
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            -64.65721327436006,
+            -37.68761943628363,
+            -347.698138092508
+          ],
+          "to": [
+            -64.65721327436006,
+            -37.68761943628363,
+            -237.69813809250797
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            -53.12987378101658,
+            377.1286328236232,
+            -347.6981380925004
+          ],
+          "to": [
+            -53.12987378101658,
+            377.1286328236232,
+            -237.69813809250041
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            344.9459698644914,
+            492.29534958614784,
+            -347.6981380924991
+          ],
+          "to": [
+            344.9459698644914,
+            492.29534958614784,
+            -237.6981380924991
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        }
+      ],
+      "focus_part_ids": [],
+      "hidden_part_ids": [],
+      "visibility_reason": "",
+      "evidence": [
+        {
+          "kind": "reference_operation",
+          "reference_sha256": "e644f453585fedaa256c5eec8667c50726384c5968101844dca358213b3e54bc",
+          "reference_step": 1,
+          "source_sha256": "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31",
+          "status": "mapping_proposed"
+        }
+      ],
+      "warnings": [
+        "源实例对应、预装状态与本 STP 版本的适用性尚未确认。",
+        "红箭头只表示从分开展示位置回到当前 STEP 位置，不证明插入方向或可行运动路径。",
+        "B / C / D 螺丝规格和数量来自参考原文；当前 CAD 紧固件实例未核定，未额外绘造螺丝或孔位。"
+      ],
+      "reviewed": false,
+      "kind": "assembly",
+      "include_in_manual": true
+    },
+    {
+      "id": "install-gas-lift",
+      "title": "放入气压杆",
+      "instruction": "将气压杆较粗的一端对准五爪中心孔位后放置进去（注：由于新安装气压杆在未受力的情况下和椅脚配合较松，倒置会出现掉落的风险）。",
+      "assembled_groups": [
+        "unit-base",
+        "unit-casters"
+      ],
+      "moving_groups": [
+        "unit-gas-lift"
+      ],
+      "offsets": {
+        "unit-gas-lift": [
+          0,
+          0,
+          120
+        ]
+      },
+      "camera": [
+        1,
+        -1,
+        0.85
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "arrows": [
+        {
+          "from": [
+            225.31799999600935,
+            162.73564177600127,
+            -1.849264056779461
+          ],
+          "to": [
+            225.31799999600935,
+            162.73564177600127,
+            -121.84926405677946
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        }
+      ],
+      "focus_part_ids": [],
+      "hidden_part_ids": [],
+      "visibility_reason": "",
+      "evidence": [
+        {
+          "kind": "reference_operation",
+          "reference_sha256": "e644f453585fedaa256c5eec8667c50726384c5968101844dca358213b3e54bc",
+          "reference_step": 2,
+          "source_sha256": "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31",
+          "status": "mapping_proposed"
+        }
+      ],
+      "warnings": [
+        "源实例对应、预装状态与本 STP 版本的适用性尚未确认。",
+        "红箭头只表示从分开展示位置回到当前 STEP 位置，不证明插入方向或可行运动路径。",
+        "B / C / D 螺丝规格和数量来自参考原文；当前 CAD 紧固件实例未核定，未额外绘造螺丝或孔位。"
+      ],
+      "reviewed": false,
+      "kind": "assembly",
+      "include_in_manual": true
+    },
+    {
+      "id": "install-arm-supports",
+      "title": "安装左右扶手支架",
+      "instruction": "将靠背放置在包材上，用 B 螺丝依次将左右扶手支架（L：左，R：右）固定在靠背上。锁紧螺丝前，应先将每侧 2 颗螺丝轻松拧进 3–4 圈，再逐一拧紧，两侧固定方式一样。",
+      "assembled_groups": [
+        "unit-back"
+      ],
+      "moving_groups": [
+        "unit-support-left",
+        "unit-support-right"
+      ],
+      "offsets": {
+        "unit-support-left": [
+          120,
+          -60,
+          0
+        ],
+        "unit-support-right": [
+          -120,
+          -60,
+          0
+        ]
+      },
+      "camera": [
+        1,
+        -1,
+        0.85
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "arrows": [
+        {
+          "from": [
+            532.3484740596557,
+            124.03055878751402,
+            49.616365677521074
+          ],
+          "to": [
+            412.3484740596557,
+            184.03055878751402,
+            49.616365677521074
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            -82.44991715005969,
+            124.0083358903016,
+            49.61636547163465
+          ],
+          "to": [
+            37.55008284994031,
+            184.0083358903016,
+            49.61636547163465
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        }
+      ],
+      "focus_part_ids": [],
+      "hidden_part_ids": [],
+      "visibility_reason": "",
+      "evidence": [
+        {
+          "kind": "reference_operation",
+          "reference_sha256": "e644f453585fedaa256c5eec8667c50726384c5968101844dca358213b3e54bc",
+          "reference_step": 3,
+          "source_sha256": "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31",
+          "status": "mapping_proposed"
+        }
+      ],
+      "warnings": [
+        "源实例对应、预装状态与本 STP 版本的适用性尚未确认。",
+        "红箭头只表示从分开展示位置回到当前 STEP 位置，不证明插入方向或可行运动路径。",
+        "B / C / D 螺丝规格和数量来自参考原文；当前 CAD 紧固件实例未核定，未额外绘造螺丝或孔位。"
+      ],
+      "reviewed": false,
+      "kind": "assembly",
+      "include_in_manual": true
+    },
+    {
+      "id": "install-armrests",
+      "title": "安装扶手",
+      "instruction": "对准扶手支架定位柱，将扶手插入扶手支架定位凹槽中，插入到位后，再用 C 螺丝固定（注：扶手往前倾斜，扶手升降按钮都朝外侧）。",
+      "assembled_groups": [
+        "unit-back",
+        "unit-support-left",
+        "unit-support-right"
+      ],
+      "moving_groups": [
+        "unit-arm-left",
+        "unit-arm-right"
+      ],
+      "offsets": {
+        "unit-arm-left": [
+          100,
+          -35,
+          50
+        ],
+        "unit-arm-right": [
+          -100,
+          -35,
+          50
+        ]
+      },
+      "camera": [
+        1,
+        -1,
+        0.85
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "arrows": [
+        {
+          "from": [
+            610.505332076356,
+            -82.27662909020998,
+            331.0053329177784
+          ],
+          "to": [
+            510.505332076356,
+            -47.27662909020998,
+            281.0053329177784
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            -158.2620638089204,
+            -81.83099774475673,
+            330.8887182315741
+          ],
+          "to": [
+            -58.2620638089204,
+            -46.83099774475673,
+            280.8887182315741
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        }
+      ],
+      "focus_part_ids": [],
+      "hidden_part_ids": [],
+      "visibility_reason": "",
+      "evidence": [
+        {
+          "kind": "reference_operation",
+          "reference_sha256": "e644f453585fedaa256c5eec8667c50726384c5968101844dca358213b3e54bc",
+          "reference_step": 4,
+          "source_sha256": "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31",
+          "status": "mapping_proposed"
+        }
+      ],
+      "warnings": [
+        "源实例对应、预装状态与本 STP 版本的适用性尚未确认。",
+        "红箭头只表示从分开展示位置回到当前 STEP 位置，不证明插入方向或可行运动路径。",
+        "B / C / D 螺丝规格和数量来自参考原文；当前 CAD 紧固件实例未核定，未额外绘造螺丝或孔位。"
+      ],
+      "reviewed": false,
+      "kind": "assembly",
+      "include_in_manual": true
+    },
+    {
+      "id": "install-back-to-seat",
+      "title": "将靠背总成固定到坐垫底盘",
+      "instruction": "将靠背底部安装位置对准底盘安装位置向里推入，直到 3 个螺丝孔对准安装槽后，用 C 螺丝将靠背固定在座垫上。锁紧螺丝前，应先将 3 颗螺丝轻松拧进 3–4 圈，再逐一拧紧。",
+      "assembled_groups": [
+        "unit-seat"
+      ],
+      "moving_groups": [
+        "unit-back",
+        "unit-support-left",
+        "unit-support-right",
+        "unit-arm-left",
+        "unit-arm-right"
+      ],
+      "offsets": {
+        "unit-back": [
+          0,
+          140,
+          70
+        ],
+        "unit-support-left": [
+          0,
+          140,
+          70
+        ],
+        "unit-support-right": [
+          0,
+          140,
+          70
+        ],
+        "unit-arm-left": [
+          0,
+          140,
+          70
+        ],
+        "unit-arm-right": [
+          0,
+          140,
+          70
+        ]
+      },
+      "camera": [
+        1,
+        -1,
+        0.85
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "arrows": [
+        {
+          "from": [
+            225.4587718661951,
+            454.17199939840964,
+            410.0510465422426
+          ],
+          "to": [
+            225.4587718661951,
+            314.17199939840964,
+            340.0510465422426
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            412.3484740596557,
+            324.030558787514,
+            119.61636567752107
+          ],
+          "to": [
+            412.3484740596557,
+            184.03055878751402,
+            49.616365677521074
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            37.55008284994031,
+            324.0083358903016,
+            119.61636547163465
+          ],
+          "to": [
+            37.55008284994031,
+            184.0083358903016,
+            49.61636547163465
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            510.505332076356,
+            92.72337090979002,
+            351.0053329177784
+          ],
+          "to": [
+            510.505332076356,
+            -47.27662909020998,
+            281.0053329177784
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            -58.2620638089204,
+            93.16900225524327,
+            350.8887182315741
+          ],
+          "to": [
+            -58.2620638089204,
+            -46.83099774475673,
+            280.8887182315741
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        }
+      ],
+      "focus_part_ids": [],
+      "hidden_part_ids": [],
+      "visibility_reason": "",
+      "evidence": [
+        {
+          "kind": "reference_operation",
+          "reference_sha256": "e644f453585fedaa256c5eec8667c50726384c5968101844dca358213b3e54bc",
+          "reference_step": 5,
+          "source_sha256": "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31",
+          "status": "mapping_proposed"
+        }
+      ],
+      "warnings": [
+        "源实例对应、预装状态与本 STP 版本的适用性尚未确认。",
+        "红箭头只表示从分开展示位置回到当前 STEP 位置，不证明插入方向或可行运动路径。",
+        "B / C / D 螺丝规格和数量来自参考原文；当前 CAD 紧固件实例未核定，未额外绘造螺丝或孔位。"
+      ],
+      "reviewed": false,
+      "kind": "assembly",
+      "include_in_manual": true
+    },
+    {
+      "id": "install-upper-to-base",
+      "title": "将椅身装到气压杆",
+      "instruction": "将装好靠背的椅子对准气压杆插入到底盘孔内，可拿起五爪去辅助对准（注：不可以直接手握气压杆对孔，可能会使气压杆和五爪分离。由于椅子较重，此步骤建议两个人配合操作）。",
+      "assembled_groups": [
+        "unit-base",
+        "unit-casters",
+        "unit-gas-lift"
+      ],
+      "moving_groups": [
+        "unit-seat",
+        "unit-back",
+        "unit-support-left",
+        "unit-support-right",
+        "unit-arm-left",
+        "unit-arm-right"
+      ],
+      "offsets": {
+        "unit-seat": [
+          0,
+          0,
+          160
+        ],
+        "unit-back": [
+          0,
+          0,
+          160
+        ],
+        "unit-support-left": [
+          0,
+          0,
+          160
+        ],
+        "unit-support-right": [
+          0,
+          0,
+          160
+        ],
+        "unit-arm-left": [
+          0,
+          0,
+          160
+        ],
+        "unit-arm-right": [
+          0,
+          0,
+          160
+        ]
+      },
+      "camera": [
+        1,
+        -1,
+        0.85
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "arrows": [
+        {
+          "from": [
+            200.08088280234392,
+            55.39770465252592,
+            201.26660335957845
+          ],
+          "to": [
+            200.08088280234392,
+            55.39770465252592,
+            41.266603359578454
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            225.4587718661951,
+            314.17199939840964,
+            500.0510465422426
+          ],
+          "to": [
+            225.4587718661951,
+            314.17199939840964,
+            340.0510465422426
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            412.3484740596557,
+            184.03055878751402,
+            209.61636567752106
+          ],
+          "to": [
+            412.3484740596557,
+            184.03055878751402,
+            49.616365677521074
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            37.55008284994031,
+            184.0083358903016,
+            209.61636547163465
+          ],
+          "to": [
+            37.55008284994031,
+            184.0083358903016,
+            49.61636547163465
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            510.505332076356,
+            -47.27662909020998,
+            441.0053329177784
+          ],
+          "to": [
+            510.505332076356,
+            -47.27662909020998,
+            281.0053329177784
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        },
+        {
+          "from": [
+            -58.2620638089204,
+            -46.83099774475673,
+            440.8887182315741
+          ],
+          "to": [
+            -58.2620638089204,
+            -46.83099774475673,
+            280.8887182315741
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        }
+      ],
+      "focus_part_ids": [],
+      "hidden_part_ids": [],
+      "visibility_reason": "",
+      "evidence": [
+        {
+          "kind": "reference_operation",
+          "reference_sha256": "e644f453585fedaa256c5eec8667c50726384c5968101844dca358213b3e54bc",
+          "reference_step": 6,
+          "source_sha256": "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31",
+          "status": "mapping_proposed"
+        }
+      ],
+      "warnings": [
+        "源实例对应、预装状态与本 STP 版本的适用性尚未确认。",
+        "红箭头只表示从分开展示位置回到当前 STEP 位置，不证明插入方向或可行运动路径。",
+        "B / C / D 螺丝规格和数量来自参考原文；当前 CAD 紧固件实例未核定，未额外绘造螺丝或孔位。"
+      ],
+      "reviewed": false,
+      "kind": "assembly",
+      "include_in_manual": true
+    },
+    {
+      "id": "install-headrest",
+      "title": "安装头枕",
+      "instruction": "将头枕安装孔对准靠背安装孔后，先将头枕上方卡入靠背，再按参考图示方向旋转卡入，最后用 D 螺丝将头枕固定。锁紧螺丝前，可用手按压头枕安装处，使头枕更贴合靠背，方便将 2 颗螺丝轻松拧进 3–4 圈，再逐一拧紧，完成安装。",
+      "assembled_groups": [
+        "unit-back"
+      ],
+      "moving_groups": [
+        "unit-headrest"
+      ],
+      "offsets": {
+        "unit-headrest": [
+          0,
+          100,
+          80
+        ]
+      },
+      "camera": [
+        1,
+        -1,
+        0.85
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "arrows": [
+        {
+          "from": [
+            224.40409007055544,
+            472.0293049589786,
+            858.947943782226
+          ],
+          "to": [
+            224.40409007055544,
+            372.0293049589786,
+            778.947943782226
+          ],
+          "meaning": "reposition",
+          "status": "proposed"
+        }
+      ],
+      "focus_part_ids": [],
+      "hidden_part_ids": [],
+      "visibility_reason": "",
+      "evidence": [
+        {
+          "kind": "reference_operation",
+          "reference_sha256": "e644f453585fedaa256c5eec8667c50726384c5968101844dca358213b3e54bc",
+          "reference_step": 7,
+          "source_sha256": "99f2ce2efdec2ed95ac30b7c317d62436107c6cb4284049ac3d747cb96bb9d31",
+          "status": "mapping_proposed"
+        }
+      ],
+      "warnings": [
+        "源实例对应、预装状态与本 STP 版本的适用性尚未确认。",
+        "红箭头只表示从分开展示位置回到当前 STEP 位置，不证明插入方向或可行运动路径。",
+        "B / C / D 螺丝规格和数量来自参考原文；当前 CAD 紧固件实例未核定，未额外绘造螺丝或孔位。",
+        "头枕旋转卡合来自参考原文；当前直箭头仅表示展示复位，未验证该4D头枕的旋转卡合路径。",
+        "本步聚焦靠背与头枕；其余已装单元不参与局部场景，完整几何仍保留在最终总览。"
+      ],
+      "reviewed": false,
+      "kind": "assembly",
+      "include_in_manual": true
+    },
+    {
+      "id": "model-overview",
+      "title": "完整 STP 模型总览（不进入手册）",
+      "instruction": "仅核对全部当前 STEP 几何及最终位置，不另占原说明书的安装步骤图区域。",
+      "assembled_groups": [
+        "unit-seat",
+        "unit-back",
+        "unit-headrest",
+        "unit-gas-lift",
+        "unit-base",
+        "unit-casters",
+        "unit-support-left",
+        "unit-support-right",
+        "unit-arm-left",
+        "unit-arm-right"
+      ],
+      "moving_groups": [],
+      "offsets": {},
+      "camera": [
+        1,
+        -1,
+        0.85
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ],
+      "arrows": [],
+      "focus_part_ids": [],
+      "hidden_part_ids": [],
+      "visibility_reason": "",
+      "evidence": [],
+      "warnings": [
+        "只复现源 STEP，不补造缺失结构或确认动作可操作性。"
+      ],
+      "reviewed": false,
+      "kind": "overview",
+      "include_in_manual": false
+    }
+  ],
+  "style": {
+    "camera": [
+      1,
+      -1,
+      0.85
+    ],
+    "up": [
+      0,
+      0,
+      1
+    ],
+    "width": 1100,
+    "height": 800,
+    "margin": 70,
+    "hlr": "poly",
+    "explode_ratio": 0.18
+  },
+  "warnings": [
+    "参考型号列表与当前E301-4P的细节适用性待确认，尤其头枕卡合和螺丝实例。",
+    "座垫底盘、腰部及扶手内部零件保留为原部件的预装候选，避免误写成用户安装动作。",
+    "全部181个几何对象保留；11个无几何结构占位仅作来源记录，不作为安装件。"
+  ],
+  "mapping_candidates": [
+    {
+      "group_id": "unit-seat",
+      "geometry_count": 71,
+      "bbox_min": [
+        -87.56045446020406,
+        -197.733530727108,
+        -105.75769306113094
+      ],
+      "bbox_max": [
+        487.7222200648919,
+        308.5289400321598,
+        188.29089978028784
+      ],
+      "instance_labels": [
+        "E301-ZD-030001_1",
+        "E2010003_5_1",
+        "E2010004_10_1",
+        "E201000_11_1",
+        "0005_24_1",
+        "0006_11_1",
+        "0007_6_1",
+        "0008_11_1",
+        "GB_T846-85_ST4_2X16_1_1",
+        "GB_T846-85_ST4_2X16_1_1",
+        "GB_T846-85_ST4_2X16_1_1",
+        "GB_T846-85_ST4_2X16_1_1",
+        "GB_T70_1-85_M6X10_2_1",
+        "_MIR0001_14_1",
+        "_MIR0002_9_1",
+        "_MIR0003_3_1",
+        "E2010006_4_1",
+        "E2010004_15_1",
+        "KZ-12_2_1",
+        "6_2_1",
+        "ADMI5D809113T1QC_1_1_1",
+        "ADMI5D809113T1QC_1_1_2",
+        "ADMI5D809113T1QC_1_1_3",
+        "COMPOUND",
+        "SHELL",
+        "_0038_2_1_1_1",
+        "_0040_7_1_1_1",
+        "_0046_8_1_3_1",
+        "_0047_2_1_1_1",
+        "202402190001_1",
+        "_0046_8_1_3_6_3_1",
+        "E301-DZ-0700_1_1",
+        "E301-DZ-0700_1_2",
+        "E301-DZ-0700_1_3",
+        "_-1-SOLID20001_2_1",
+        "_8-SOLID10001_2_1",
+        "_9-SOLID10001_2_1",
+        "__-1--70960001_2_1",
+        "_1-SOLID10001_2_1",
+        "10X103B-3-SOLID100_2_1",
+        "4-1-SOLID10001_2_1",
+        "_1-SOLID100_3_1",
+        "10X114A-2-SOLID100_2_1",
+        "10X117C-1-SOLID100_2_1",
+        "_-1-SOLID10001_2_1",
+        "_7-SOLID10001_2_1",
+        "_6-SOLID10001_2_1",
+        "4-298530001_2_1",
+        "_3-SOLID10001_2_1",
+        "_1-SOLID1000_2-34122_1",
+        "_1-SOLID10004_2_1",
+        "8_5X20X0_8-3-SOLID0001_2_1",
+        "8_5X20X0_8-4-SOLID0001_2_1",
+        "12-1-SOLID10001_2_1",
+        "_1-SOLID1000_2-36049_1",
+        "_2-SOLID10001_2_1",
+        "8_5X20X0_8-2-SOLID0001_2_1",
+        "8_5X20X0_8-1-SOLID0001_2_1",
+        "435_HQ__0001_2_1",
+        "12X114D-1-SOLID100_2_1",
+        "_1-SOLID1000_2-40473_1",
+        "_2-SOLID1000_2_1",
+        "_--1-SOLID10001_2_1",
+        "_1-SOLID10007_2_1",
+        "_4-SOLID10001_2_1",
+        "_2-SOLID10003_2_1",
+        "__-1-711250001_2_1",
+        "4-1-SOLID10002_2_1",
+        "4-744700001_2_1",
+        "_3-SOLID10002_2_1",
+        "12-2-SOLID10001_2_1"
+      ],
+      "status": "proposed"
+    },
+    {
+      "group_id": "unit-back",
+      "geometry_count": 48,
+      "bbox_min": [
+        -42.26134814735471,
+        168.07544508750226,
+        -30.582680650154852
+      ],
+      "bbox_max": [
+        493.1788918797449,
+        460.268553709317,
+        710.6847737346401
+      ],
+      "instance_labels": [
+        "E301-3-YB-060001_1",
+        "E301-3-YB-01-0001_1",
+        "DOCUMENT_A_ASM_1_1",
+        "E301-3-YZ-040001_1",
+        "E301-3-YZ-090001_1",
+        "E301-3-YZ-100001_1",
+        "E301-3-YZ-05-000001_1",
+        "E301-3-YZ-17POM0001_1",
+        "E301-3-YZ-17POM0002_1",
+        "E301-3-YZ-200001_1",
+        "E301-3-YZ-220001_1",
+        "E301-3-YZ-240001_1",
+        "E301-3-YZ-240002_1",
+        "E301-3-YZ-MT-010001_1",
+        "E301-3-YZ-MT-06-0001_1",
+        "E301-3-YZ-MT-080001_1",
+        "E301-3-YB-050001_1",
+        "SHENGJIANGJIZUO10-20241030",
+        "YAOKAOSHOUBINGGAIBAN_1_1",
+        "E3_4-2410140001_1_1_1",
+        "E301-3-YZ-160001_2_1_1_2",
+        "YAPIANGAI-20241129",
+        "PRT0007",
+        "E301-3-YZ-020001_1_1",
+        "E301-3-YZ-020001_1_2",
+        "E301-3-YZ-010001_1",
+        "E301-3-YZ-070001_1_1",
+        "E301-3-YZ-070001_1_2",
+        "E301-3-YZ-060001_1_1",
+        "E301-3-YZ-060001_1_2",
+        "E301-3-YZ-080001_1_1",
+        "E301-3-YZ-080001_1_2",
+        "E301-3-YZ-13POM0001_1_1",
+        "E301-3-YZ-13POM0001_1_2",
+        "E301-3-YZ-MT-070001_1",
+        "E301-3-YZ-140001_1_1",
+        "E301-3-YZ-140001_1_2",
+        "E301-3-YZ-MT-050001_1_1",
+        "E301-3-YZ-MT-050001_1_2",
+        "E301-3-YZ-MT-020001_1_1",
+        "E301-3-YZ-MT-020001_1_2",
+        "E301-3-YZ-MT-030001_1_1",
+        "E301-3-YZ-MT-030001_1_2",
+        "DOCUMENT_A_ASM_1_1_2_ASM",
+        "SOLID",
+        "SHELL",
+        "KACHI-20241202",
+        "E3_4-2412120001"
+      ],
+      "status": "proposed"
+    },
+    {
+      "group_id": "unit-headrest",
+      "geometry_count": 37,
+      "bbox_min": [
+        16.373269683795467,
+        226.6289195109094,
+        635.8288636112687
+      ],
+      "bbox_max": [
+        432.4349104573154,
+        517.4296904070478,
+        922.0670239531834
+      ],
+      "instance_labels": [
+        "_POM0001_1_1",
+        "_POM0001_1_2",
+        "_-A00001_1",
+        "_POM0002_1_1",
+        "_POM0002_1_2",
+        "_0001_1_1",
+        "_0001_1_2",
+        "E301-TZ-8003_1",
+        "E301-TZ-8005_1",
+        "E301-TZ-8006_1",
+        "E301-TZ-8007_1_1",
+        "E301-TZ-8007_1_2",
+        "E301-TZ-8008_1",
+        "E301-TZ-8009_1",
+        "E301-TZ-8010_1",
+        "E301-TZ-8011_1",
+        "GBT-DP-D8X16_1",
+        "E301-TZ-8012_1",
+        "E301-TZ-8013_1_1",
+        "E301-TZ-8013_1_2",
+        "E301-TZ-8013_1_3",
+        "E301-TZ-8013_1_4",
+        "E301-TZ-8014_1_1",
+        "E301-TZ-8014_1_2",
+        "E301-TZ-8015_1",
+        "GBT-DP-D8X16_1",
+        "_POM-010001_1_1",
+        "_POM-010001_1_2",
+        "_0002_1_1",
+        "_0002_1_2",
+        "BOZHU",
+        "BOZHU",
+        "E301-TZ-8007_1_1",
+        "TOUZHENSHEGNJIANGGUDINKUAI_1__1",
+        "E301-TZ-8004_1",
+        "E301-TZ-01-4D0001_1",
+        "DOCUMENT_A_ASM_1_ASM"
+      ],
+      "status": "proposed"
+    },
+    {
+      "group_id": "unit-gas-lift",
+      "geometry_count": 1,
+      "bbox_min": [
+        200.31799999600935,
+        137.73564177600127,
+        -239.59926405677967
+      ],
+      "bbox_max": [
+        250.31799999600935,
+        187.73564177600127,
+        -4.099264056779242
+      ],
+      "instance_labels": [
+        "85-4QYB_1"
+      ],
+      "status": "proposed"
+    },
+    {
+      "group_id": "unit-base",
+      "geometry_count": 1,
+      "bbox_min": [
+        -72.40272543848678,
+        -177.1553233131066,
+        -214.94813814248138
+      ],
+      "bbox_max": [
+        575.473777895271,
+        497.4553563959769,
+        -150.5468523544321
+      ],
+      "instance_labels": [
+        "LINGXINGWUZHUA"
+      ],
+      "status": "proposed"
+    },
+    {
+      "group_id": "unit-casters",
+      "geometry_count": 5,
+      "bbox_min": [
+        -103.46365127690987,
+        -212.59365800400795,
+        -282.4481381425116
+      ],
+      "bbox_max": [
+        610.1141744672333,
+        530.9083738622958,
+        -192.94813804249912
+      ],
+      "instance_labels": [
+        "YL_1",
+        "YL_1",
+        "YL_1",
+        "YL_1",
+        "YL_1"
+      ],
+      "status": "proposed"
+    },
+    {
+      "group_id": "unit-support-left",
+      "geometry_count": 1,
+      "bbox_min": [
+        299.26297356532285,
+        44.06522877673235,
+        -23.742487890279453
+      ],
+      "bbox_max": [
+        525.4339745539886,
+        323.9958887982957,
+        122.9752192453216
+      ],
+      "instance_labels": [
+        "E301-3-FS-010001_1_2_1"
+      ],
+      "status": "proposed"
+    },
+    {
+      "group_id": "unit-support-right",
+      "geometry_count": 1,
+      "bbox_min": [
+        -75.52481629532124,
+        44.0349638123722,
+        -23.742487997819644
+      ],
+      "bbox_max": [
+        150.62498199520186,
+        323.981707968231,
+        122.97521894108894
+      ],
+      "instance_labels": [
+        "E301-3-FS-010001_1_1_1_1"
+      ],
+      "status": "proposed"
+    },
+    {
+      "group_id": "unit-arm-left",
+      "geometry_count": 7,
+      "bbox_min": [
+        458.00535994738203,
+        -188.31512989772068,
+        117.00489533590236
+      ],
+      "bbox_max": [
+        563.0053042053299,
+        93.76187171730072,
+        445.0057704996544
+      ],
+      "instance_labels": [
+        "ADMI190CE456OZX4_3_1_2_1",
+        "_X2_51E04F5556FE5F6296C6_X0-8_9",
+        "ADMI190CE456OZX4_4_1_2_1",
+        "_X2_51E04F5556FE5F6296C6_X0-_11",
+        "_X2_51E04F5556FE5F6296C6_X0-_13",
+        "_X2_51E04F5556FE5F6296C6_X0-_15",
+        "FUSHOUMIAN-20250117_1"
+      ],
+      "status": "proposed"
+    },
+    {
+      "group_id": "unit-arm-right",
+      "geometry_count": 9,
+      "bbox_min": [
+        -110.81967017685739,
+        -188.78104251238844,
+        117.32600402250412
+      ],
+      "bbox_max": [
+        -5.704457440983412,
+        95.11904702287498,
+        444.45143244064406
+      ],
+      "instance_labels": [
+        "_X2_51E04F5556FE5F6296C6_X0-_26",
+        "ADMI190CE456OZX4_3_1_1_1_1",
+        "_X2_51E04F5556FE5F6296C6_X0-_27",
+        "ADMI190CE456OZX4_4_1_1_1_1",
+        "_X2_51E04F5556FE5F6296C6_X0-_29",
+        "_X2_51E04F5556FE5F6296C6_X0-_31",
+        "_X2_51E04F5556FE5F6296C6_X0-_33",
+        "_X2_51E04F5556FE5F6296C6_X0-1_2",
+        "FUSHOUMIAN-20250117_1_1_2"
+      ],
+      "status": "proposed"
+    }
+  ]
+}
